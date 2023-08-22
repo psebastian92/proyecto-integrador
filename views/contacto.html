@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Proyecto Integrador - Contacto</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <input type="checkbox" id="menu">
+
+    <nav class="nav-bar"> <!-- nav-bar -->
+      <ul class="nav-bar__nav-list">
+        <li class="nav-bar__nav-item">
+          <a href="/index.html" class="nav-bar__nav-link">Inicio</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="#" class="nav-bar__nav-link">Alta</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="#" class="nav-bar__nav-link">Contacto</a>
+        </li>
+        <li class="nav-bar__nav-item">
+          <a href="nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+        </li>
+      </ul>
+    </nav> <!-- nav-bar -->
+
+    <div class="search-bar"> <!-- search-bar -->
+      <div class="search-bar__logo-container">
+        <i class="fa-solid fa-microchip search-bar__logo-img "></i>
+      </div>
+      <form action="" class="search-bar__form-container">
+        <label for="busqueda" class="search-bar__form-label">Buscar</label>
+        <input type="search" class="search-bar__form-search" id="busqueda">
+        <input type="submit" value="Buscar" class="search-bar__form-submit">
+      </form>
+      <div class="search-bar__carrito-container">C</div>
+      <div class="menu-toggle">
+        <label for="menu" class="menu-toggle__label">
+          <span class="menu-toggle__top-bread"></span>
+          <span class="menu-toggle__meat"></span>
+          <span class="menu-toggle__bottom-bread"></span>
+        </label>
+      </div>
+    </div> <!-- search-bar -->
+  </header>
+
+  <div class="contact-form">
+    <form action="URL" method="post">
+      <fieldset class="contact-form__fieldset">
+        <div>
+          <label for="nombre" class="contact-form__label">Nombre</label>
+          <input class ="contact-form__input" type="text" name="nombre" id="nombre" required>
+        </div>
+        <br>
+        <div>
+          <label for="email" class="contact-form__label">E-mail</label>
+          <input class ="contact-form__input" type="email" name="email" id="email" placeholder="Ej: mail@gmail.com" required>
+        </div>
+        <br>
+        <div>
+          <label for="comentarios" class="contact-form__label">Comentarios</label>
+          <textarea class ="contact-form__input" id="comentarios" name="comentarios" rows="10" cols="70"></textarea><br>
+        </div>
+
+        <div class="contact-form__buttons">
+          <button class="contact-form__send" type="submit">Enviar</button>
+          <button class="contact-form__reset" type="reset">Restablecer</button>
+      </div>
+
+      </fieldset>
+    </form>
+  </div> 
+
+  <footer class="foot"> <!-- footer -->
+    <div class="foot__shop">
+      <div class="foot__shop-title">ArduShop</div>
+      <div class="foot__shop-content">Copyright © 2020-2023 ArduShop S.R.L.</div>
+    </div>
+    <div class="foot__contact">
+      <div class="foot__contact-title">Contacto</div>
+      <div class="foot__contact-content">+54-11-xxxx-xxxx</div>
+    </div>
+    <div class="foot__followus">
+      <div class="foot__followus-title">Seguinos</div>
+      <div class="foot__followus-content">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+  </footer> <!-- footer -->
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
